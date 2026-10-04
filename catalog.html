@@ -1,335 +1,166 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <meta
-    name="description"
-    content="Каталог товаров учебного интернет-магазина."
-  >
-
-  <title>Каталог товаров — Учебный интернет-магазин</title>
-
+  <meta name="description" content="Каталог ShopProject со статическими фильтрами, категориями и карточками товаров.">
+  <title>Каталог — ShopProject</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
-
-<body>
+<body id="top">
+  <a class="skip-link" href="#main-content">Перейти к содержимому</a>
 
   <header class="site-header">
     <div class="site-header__inner">
-
-      <a class="site-header__logo" href="index.html">
-        ShopProject
-      </a>
-
+      <a class="site-header__logo" href="index.html">ShopProject</a>
       <nav class="site-nav" aria-label="Основная навигация">
-
         <ul class="site-nav__list">
-
-          <li class="site-nav__item">
-            <a class="site-nav__link" href="index.html">
-              Главная
-            </a>
-          </li>
-
-          <li class="site-nav__item">
-            <a
-              class="site-nav__link site-nav__link--active"
-              href="catalog.html"
-              aria-current="page"
-            >
-              Каталог
-            </a>
-          </li>
-
-          <li class="site-nav__item">
-            <a class="site-nav__link" href="contacts.html">
-              Контакты
-            </a>
-          </li>
-
-          <li class="site-nav__item">
-            <a class="site-nav__link" href="index.html#advantages">
-              Преимущества
-            </a>
-          </li>
-
-          <li class="site-nav__item">
-            <a class="site-nav__link" href="index.html#popular">
-              Популярные товары
-            </a>
-          </li>
-
-          <li class="site-nav__item">
-            <a class="site-nav__link" href="index.html#contacts">
-              Обратная связь
-            </a>
-          </li>
-
+          <li class="site-nav__item"><a class="site-nav__link" href="index.html">Главная</a></li>
+          <li class="site-nav__item"><a class="site-nav__link site-nav__link--active" href="catalog.html" aria-current="page">Каталог</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="product.html">Товар</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="order.html">Заявка</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="contacts.html">Контакты</a></li>
         </ul>
-
       </nav>
-
     </div>
   </header>
 
-
-  <main>
-
+  <main id="main-content">
     <nav class="breadcrumbs" aria-label="Хлебные крошки">
-
-      <a
-        class="breadcrumbs__link"
-        href="index.html"
-      >
-        Главная
-      </a>
-
-      <span class="breadcrumbs__current">
-        Каталог
-      </span>
-
+      <a class="breadcrumbs__link" href="index.html">Главная</a>
+      <span class="breadcrumbs__current" aria-current="page">Каталог</span>
     </nav>
 
-
-    <section class="section">
-
-      <h1 class="section__title">
-        Каталог товаров
-      </h1>
-
+    <section class="section section--compact">
+      <div class="section__heading">
+        <p class="section__eyebrow">Каталог</p>
+        <h1 class="section__title">Выберите подходящий товар</h1>
+      </div>
       <p class="section__text">
-        На этой странице представлен учебный каталог товаров.
-        Слева расположен статический блок фильтров, а справа —
-        сетка карточек товаров.
+        Фильтры представлены как статическая разметка. Карточки дополнены категориями,
+        бейджами, состояниями наличия и дополнительными данными.
       </p>
-
     </section>
 
+    <div class="catalog-layout">
+      <aside class="catalog-filters" aria-labelledby="filters-title">
+        <h2 class="catalog-filters__title" id="filters-title">Фильтры</h2>
 
-    <section class="catalog-layout">
-
-      <aside class="catalog-filters">
-
-        <h2 class="catalog-filters__title">
-          Фильтры
-        </h2>
-
-
-        <form
-          class="filters-form"
-          action="#"
-          method="get"
-        >
-
+        <form class="filters-form" action="#" method="get">
           <fieldset class="filters-form__group">
-
-            <legend class="filters-form__legend">
-              Категория
-            </legend>
-
-            <label class="filters-form__label">
-
-              <input
-                class="filters-form__checkbox"
-                type="checkbox"
-                name="category"
-                value="all"
-              >
-
-              Все товары
-
-            </label>
-
-            <label class="filters-form__label">
-
-              <input
-                class="filters-form__checkbox"
-                type="checkbox"
-                name="category"
-                value="popular"
-              >
-
-              Популярные
-
-            </label>
-
-            <label class="filters-form__label">
-
-              <input
-                class="filters-form__checkbox"
-                type="checkbox"
-                name="category"
-                value="new"
-              >
-
-              Новинки
-
-            </label>
-
+            <legend class="filters-form__legend">Категория</legend>
+            <label class="filters-form__label"><input class="filters-form__checkbox" type="checkbox" name="category" value="study"> Для учёбы</label>
+            <label class="filters-form__label"><input class="filters-form__checkbox" type="checkbox" name="category" value="new"> Новинки</label>
+            <label class="filters-form__label"><input class="filters-form__checkbox" type="checkbox" name="category" value="sale"> Скидки</label>
           </fieldset>
 
-
           <fieldset class="filters-form__group">
-
-            <legend class="filters-form__legend">
-              Цена
-            </legend>
-
-            <label
-              class="filters-form__label"
-              for="price-from"
-            >
-              От
-            </label>
-
-            <input
-              class="filters-form__input"
-              id="price-from"
-              name="price-from"
-              type="number"
-              min="0"
-              placeholder="0"
-            >
-
-
-            <label
-              class="filters-form__label"
-              for="price-to"
-            >
-              До
-            </label>
-
-            <input
-              class="filters-form__input"
-              id="price-to"
-              name="price-to"
-              type="number"
-              min="0"
-              placeholder="5000"
-            >
-
+            <legend class="filters-form__legend">Цена</legend>
+            <label class="filters-form__label" for="price-from">От</label>
+            <input class="filters-form__input" id="price-from" name="price-from" type="number" min="0" placeholder="0">
+            <label class="filters-form__label" for="price-to">До</label>
+            <input class="filters-form__input" id="price-to" name="price-to" type="number" min="0" placeholder="5000">
           </fieldset>
 
+          <fieldset class="filters-form__group">
+            <legend class="filters-form__legend">Наличие</legend>
+            <label class="filters-form__label"><input class="filters-form__radio" type="radio" name="stock" value="all" checked> Все</label>
+            <label class="filters-form__label"><input class="filters-form__radio" type="radio" name="stock" value="available"> Только в наличии</label>
+          </fieldset>
 
-          <button
-            class="button button--primary"
-            type="button"
-          >
-            Применить
-          </button>
-
+          <div class="filters-form__actions">
+            <button class="button button--primary" type="button">Применить</button>
+            <button class="button button--secondary" type="reset">Сбросить</button>
+          </div>
         </form>
-
       </aside>
 
-
-      <section class="catalog-products">
-
-        <h2 class="catalog-products__title">
-          Список товаров
-        </h2>
-
-
-        <div class="products-grid">
-
-          <article class="product-card product-card--featured">
-
-            <h3 class="product-card__title">
-              Товар 1
-            </h3>
-
-            <p class="product-card__description">
-              Краткое описание учебного товара.
-            </p>
-
-            <p class="product-card__price">
-              Цена: 1000 руб.
-            </p>
-
-            <a
-              class="button button--primary product-card__button"
-              href="index.html#popular"
-            >
-              Подробнее
-            </a>
-
-          </article>
-
-
-          <article class="product-card">
-
-            <h3 class="product-card__title">
-              Товар 2
-            </h3>
-
-            <p class="product-card__description">
-              Краткое описание учебного товара.
-            </p>
-
-            <p class="product-card__price">
-              Цена: 1500 руб.
-            </p>
-
-            <a
-              class="button button--primary product-card__button"
-              href="index.html#popular"
-            >
-              Подробнее
-            </a>
-
-          </article>
-
-
-          <article class="product-card">
-
-            <h3 class="product-card__title">
-              Товар 3
-            </h3>
-
-            <p class="product-card__description">
-              Краткое описание учебного товара.
-            </p>
-
-            <p class="product-card__price">
-              Цена: 2000 руб.
-            </p>
-
-            <a
-              class="button button--primary product-card__button"
-              href="index.html#popular"
-            >
-              Подробнее
-            </a>
-
-          </article>
-
+      <section class="catalog-products" aria-labelledby="catalog-products-title">
+        <div class="catalog-products__header">
+          <h2 class="catalog-products__title" id="catalog-products-title">Товары</h2>
+          <p class="catalog-products__count">Найдено: 6</p>
         </div>
 
+        <div class="products-grid">
+          <article class="product-card product-card--featured">
+            <span class="product-card__badge product-card__badge--hit">Хит</span>
+            <img class="product-card__image" src="images/product-1.svg" alt="Иллюстрация товара 1">
+            <p class="product-card__category">Для учёбы</p>
+            <h3 class="product-card__title">Товар 1</h3>
+            <p class="product-card__description">Базовый учебный товар.</p>
+            <div class="product-card__meta"><span class="product-card__availability">В наличии</span><span class="product-card__rating">★ 4,8</span></div>
+            <p class="product-card__price">1 000 руб.</p>
+            <a class="button button--primary product-card__button" href="product.html">Подробнее</a>
+          </article>
+
+          <article class="product-card product-card--new">
+            <span class="product-card__badge product-card__badge--new">Новинка</span>
+            <img class="product-card__image" src="images/product-2.svg" alt="Иллюстрация товара 2">
+            <p class="product-card__category">Новинки</p>
+            <h3 class="product-card__title">Товар 2</h3>
+            <p class="product-card__description">Расширенный учебный товар.</p>
+            <div class="product-card__meta"><span class="product-card__availability">В наличии</span><span class="product-card__rating">★ 4,6</span></div>
+            <p class="product-card__price">1 500 руб.</p>
+            <a class="button button--primary product-card__button" href="product.html">Подробнее</a>
+          </article>
+
+          <article class="product-card product-card--discount">
+            <span class="product-card__badge product-card__badge--discount">−20%</span>
+            <img class="product-card__image" src="images/product-3.svg" alt="Иллюстрация товара 3">
+            <p class="product-card__category">Скидки</p>
+            <h3 class="product-card__title">Товар 3</h3>
+            <p class="product-card__description">Товар со скидкой.</p>
+            <div class="product-card__meta"><span class="product-card__availability">Осталось мало</span><span class="product-card__rating">★ 4,9</span></div>
+            <p class="product-card__price"><span class="product-card__old-price">2 500 руб.</span> 2 000 руб.</p>
+            <a class="button button--primary product-card__button" href="product.html">Подробнее</a>
+          </article>
+
+          <article class="product-card">
+            <img class="product-card__image" src="images/product-4.svg" alt="Иллюстрация товара 4">
+            <p class="product-card__category">Для учёбы</p>
+            <h3 class="product-card__title">Товар 4</h3>
+            <p class="product-card__description">Практичный вариант для каталога.</p>
+            <div class="product-card__meta"><span class="product-card__availability">В наличии</span><span class="product-card__rating">★ 4,4</span></div>
+            <p class="product-card__price">1 800 руб.</p>
+            <a class="button button--primary product-card__button" href="product.html">Подробнее</a>
+          </article>
+
+          <article class="product-card">
+            <img class="product-card__image" src="images/product-5.svg" alt="Иллюстрация товара 5">
+            <p class="product-card__category">Популярное</p>
+            <h3 class="product-card__title">Товар 5</h3>
+            <p class="product-card__description">Дополнительная карточка для полноценной сетки.</p>
+            <div class="product-card__meta"><span class="product-card__availability">В наличии</span><span class="product-card__rating">★ 4,7</span></div>
+            <p class="product-card__price">2 200 руб.</p>
+            <a class="button button--primary product-card__button" href="product.html">Подробнее</a>
+          </article>
+
+          <article class="product-card product-card--unavailable">
+            <span class="product-card__badge product-card__badge--muted">Нет в наличии</span>
+            <img class="product-card__image" src="images/product-6.svg" alt="Иллюстрация товара 6">
+            <p class="product-card__category">Архив</p>
+            <h3 class="product-card__title">Товар 6</h3>
+            <p class="product-card__description">Пример отдельного состояния карточки.</p>
+            <div class="product-card__meta"><span class="product-card__availability product-card__availability--muted">Ожидается</span><span class="product-card__rating">★ 4,3</span></div>
+            <p class="product-card__price">2 700 руб.</p>
+            <span class="button button--disabled product-card__button" aria-disabled="true">Недоступно</span>
+          </article>
+        </div>
       </section>
-
-    </section>
-
+    </div>
   </main>
 
+  <a class="floating-action" href="order.html" aria-label="Перейти к оформлению заявки">Оставить заявку</a>
 
   <footer class="site-footer">
-
     <div class="site-footer__inner">
-
-      <p class="site-footer__text">
-        &copy; 2026 Учебный проект. Все права защищены.
-      </p>
-
-      <p class="site-footer__text">
-        Дисциплина: Фронтенд и бэкенд разработка
-      </p>
-
+      <div><strong class="site-footer__logo">ShopProject</strong><p class="site-footer__text">Каталог демонстрирует CSS Grid, sticky-позиционирование и состояния карточек.</p></div>
+      <nav class="site-footer__nav" aria-label="Дополнительная навигация">
+        <a class="site-footer__link" href="index.html">Главная</a>
+        <a class="site-footer__link" href="contacts.html">Контакты</a>
+        <a class="site-footer__link" href="#top">Наверх ↑</a>
+      </nav>
     </div>
-
   </footer>
-
 </body>
 </html>
