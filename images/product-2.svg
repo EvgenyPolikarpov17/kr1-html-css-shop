@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Товар 2</title>
+  <desc id="desc">Новинка</desc>
+  <rect width="800" height="600" rx="36" fill="#edf8f2"/>
+  <circle cx="400" cy="245" r="120" fill="#18794e" opacity="0.16"/>
+  <rect x="255" y="135" width="290" height="220" rx="28" fill="#ffffff" stroke="#18794e" stroke-width="8"/>
+  <circle cx="400" cy="245" r="70" fill="#18794e"/>
+  <text x="400" y="264" text-anchor="middle" font-family="Arial, sans-serif" font-size="52" font-weight="700" fill="#ffffff">SP</text>
+  <text x="400" y="435" text-anchor="middle" font-family="Arial, sans-serif" font-size="42" font-weight="700" fill="#1f2937">Товар 2</text>
+  <text x="400" y="485" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" fill="#667085">Новинка</text>
+</svg>

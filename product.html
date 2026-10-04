@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Подробная карточка товара ShopProject с изображением, характеристиками, ценой и кнопкой заявки.">
+  <title>Товар 1 — ShopProject</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="top">
+  <a class="skip-link" href="#main-content">Перейти к содержимому</a>
+
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="site-header__logo" href="index.html">ShopProject</a>
+      <nav class="site-nav" aria-label="Основная навигация">
+        <ul class="site-nav__list">
+          <li class="site-nav__item"><a class="site-nav__link" href="index.html">Главная</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="catalog.html">Каталог</a></li>
+          <li class="site-nav__item"><a class="site-nav__link site-nav__link--active" href="product.html" aria-current="page">Товар</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="order.html">Заявка</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <nav class="breadcrumbs" aria-label="Хлебные крошки">
+      <a class="breadcrumbs__link" href="index.html">Главная</a>
+      <a class="breadcrumbs__link" href="catalog.html">Каталог</a>
+      <span class="breadcrumbs__current" aria-current="page">Товар 1</span>
+    </nav>
+
+    <section class="product-details">
+      <div class="product-details__visual">
+        <span class="product-details__badge">Хит</span>
+        <img class="product-details__image" src="images/product-1.svg" alt="Крупное изображение товара 1">
+      </div>
+
+      <div class="product-details__content">
+        <p class="product-details__category">Категория: для учёбы</p>
+        <h1 class="product-details__title">Товар 1</h1>
+        <p class="product-details__lead">
+          Универсальный учебный товар, который показывает полноценную структуру карточки товара.
+        </p>
+
+        <ul class="product-details__features">
+          <li class="product-details__feature">Продуманное описание товара</li>
+          <li class="product-details__feature">Отдельная таблица характеристик</li>
+          <li class="product-details__feature">Понятный переход к оформлению заявки</li>
+        </ul>
+
+        <div class="product-details__status-row">
+          <span class="status status--success">В наличии</span>
+          <span class="product-details__rating">★ 4,8 / 5</span>
+        </div>
+
+        <p class="product-details__price">1 000 руб.</p>
+
+        <div class="product-details__actions">
+          <a class="button button--primary" href="order.html">Оформить заявку</a>
+          <a class="button button--secondary" href="catalog.html">Вернуться в каталог</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section__heading">
+        <p class="section__eyebrow">Технические данные</p>
+        <h2 class="section__title">Характеристики</h2>
+      </div>
+
+      <div class="table-wrapper">
+        <table class="product-table">
+          <caption class="product-table__caption">Основные характеристики товара 1</caption>
+          <thead class="product-table__head">
+            <tr>
+              <th scope="col">Параметр</th>
+              <th scope="col">Значение</th>
+              <th scope="col">Комментарий</th>
+            </tr>
+          </thead>
+          <tbody class="product-table__body">
+            <tr><th scope="row">Категория</th><td>Для учёбы</td><td>Базовая категория каталога</td></tr>
+            <tr><th scope="row">Цена</th><td>1 000 руб.</td><td>Без дополнительных платежей</td></tr>
+            <tr><th scope="row">Наличие</th><td>В наличии</td><td>Можно оформить заявку</td></tr>
+            <tr><th scope="row">Гарантия</th><td>12 месяцев</td><td>Учебное значение</td></tr>
+            <tr><th scope="row">Доставка</th><td>По договорённости</td><td>Уточняется после заявки</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section__heading">
+        <p class="section__eyebrow">Почему стоит выбрать</p>
+        <h2 class="section__title">Преимущества товара</h2>
+      </div>
+
+      <div class="feature-strip">
+        <article class="feature-strip__item">
+          <strong class="feature-strip__title">Простая заявка</strong>
+          <p class="feature-strip__text">Переход на отдельную страницу оформления.</p>
+        </article>
+        <article class="feature-strip__item">
+          <strong class="feature-strip__title">Подробные данные</strong>
+          <p class="feature-strip__text">Характеристики собраны в понятной таблице.</p>
+        </article>
+        <article class="feature-strip__item">
+          <strong class="feature-strip__title">Единый стиль</strong>
+          <p class="feature-strip__text">Компоненты оформлены в общей системе БЭМ.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <a class="floating-action" href="order.html" aria-label="Перейти к оформлению заявки">Оставить заявку</a>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <div>
+        <strong class="site-footer__logo">ShopProject</strong>
+        <p class="site-footer__text">Карточка товара содержит изображение, описание, цену, таблицу и кнопку заявки.</p>
+      </div>
+      <nav class="site-footer__nav" aria-label="Дополнительная навигация">
+        <a class="site-footer__link" href="catalog.html">Каталог</a>
+        <a class="site-footer__link" href="order.html">Заявка</a>
+        <a class="site-footer__link" href="#top">Наверх ↑</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
