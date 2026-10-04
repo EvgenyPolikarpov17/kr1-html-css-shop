@@ -1354,6 +1354,26 @@ summary:focus-visible {
    20. Контакты
    =============================== */
 
+.contacts-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: var(--space-lg);
+
+  margin-bottom: var(--space-xl);
+}
+
+.contact-card {
+  padding: var(--space-lg);
+
+  background-color: var(--color-white);
+
+  border: 1px solid var(--color-border);
+
+  border-radius: var(--radius-md);
+}
+
 .contact-card__label {
   display: block;
 
@@ -1381,33 +1401,6 @@ summary:focus-visible {
 }
 
 .contact-card__text {
-  margin: 0;
-
-  color: var(--color-muted);
-}
-
-.contact-action {
-  display: flex;
-
-  align-items: center;
-  justify-content: space-between;
-
-  gap: var(--space-xl);
-
-  padding: var(--space-xl);
-
-  background-color: var(--color-surface-soft);
-
-  border: 1px solid var(--color-border);
-
-  border-radius: var(--radius-lg);
-}
-
-.contact-action__title {
-  margin: 0 0 var(--space-xs);
-}
-
-.contact-action__text {
   margin: 0;
 
   color: var(--color-muted);
