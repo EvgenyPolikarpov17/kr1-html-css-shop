@@ -1,134 +1,645 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Подробная карточка товара ShopProject с изображением, характеристиками, ценой и кнопкой заявки.">
-  <title>Товар 1 — ShopProject</title>
-  <link rel="stylesheet" href="css/style.css">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Schneider Slider — набор синих шариковых ручек, 4 штуки. Карточка товара ShopProject."
+  >
+
+  <title>Schneider Slider — ShopProject</title>
+
+  <link
+    rel="stylesheet"
+    href="css/style.css"
+  >
 </head>
+
+
 <body id="top">
-  <a class="skip-link" href="#main-content">Перейти к содержимому</a>
+
+  <a
+    class="skip-link"
+    href="#main-content"
+  >
+    Перейти к содержимому
+  </a>
+
+
+  <!-- ===============================
+       Шапка сайта
+       =============================== -->
 
   <header class="site-header">
+
     <div class="site-header__inner">
-      <a class="site-header__logo" href="index.html">ShopProject</a>
-      <nav class="site-nav" aria-label="Основная навигация">
+
+      <a
+        class="site-header__logo"
+        href="index.html"
+      >
+        ShopProject
+      </a>
+
+
+      <nav
+        class="site-nav"
+        aria-label="Основная навигация"
+      >
+
         <ul class="site-nav__list">
-          <li class="site-nav__item"><a class="site-nav__link" href="index.html">Главная</a></li>
-          <li class="site-nav__item"><a class="site-nav__link" href="catalog.html">Каталог</a></li>
-          <li class="site-nav__item"><a class="site-nav__link site-nav__link--active" href="product.html" aria-current="page">Товар</a></li>
-          <li class="site-nav__item"><a class="site-nav__link" href="order.html">Заявка</a></li>
-          <li class="site-nav__item"><a class="site-nav__link" href="contacts.html">Контакты</a></li>
+
+          <li class="site-nav__item">
+            <a
+              class="site-nav__link"
+              href="index.html"
+            >
+              Главная
+            </a>
+          </li>
+
+          <li class="site-nav__item">
+            <a
+              class="site-nav__link"
+              href="catalog.html"
+            >
+              Каталог
+            </a>
+          </li>
+
+          <li class="site-nav__item">
+            <a
+              class="site-nav__link site-nav__link--active"
+              href="product.html"
+              aria-current="page"
+            >
+              Товар
+            </a>
+          </li>
+
+          <li class="site-nav__item">
+            <a
+              class="site-nav__link"
+              href="order.html"
+            >
+              Заявка
+            </a>
+          </li>
+
+          <li class="site-nav__item">
+            <a
+              class="site-nav__link"
+              href="contacts.html"
+            >
+              Контакты
+            </a>
+          </li>
+
         </ul>
+
       </nav>
+
     </div>
+
   </header>
 
+
+  <!-- ===============================
+       Основное содержимое
+       =============================== -->
+
   <main id="main-content">
-    <nav class="breadcrumbs" aria-label="Хлебные крошки">
-      <a class="breadcrumbs__link" href="index.html">Главная</a>
-      <a class="breadcrumbs__link" href="catalog.html">Каталог</a>
-      <span class="breadcrumbs__current" aria-current="page">Товар 1</span>
+
+
+    <!-- ===============================
+         Хлебные крошки
+         =============================== -->
+
+    <nav
+      class="breadcrumbs"
+      aria-label="Хлебные крошки"
+    >
+
+      <a
+        class="breadcrumbs__link"
+        href="index.html"
+      >
+        Главная
+      </a>
+
+      <a
+        class="breadcrumbs__link"
+        href="catalog.html"
+      >
+        Каталог
+      </a>
+
+      <span
+        class="breadcrumbs__current"
+        aria-current="page"
+      >
+        Schneider Slider
+      </span>
+
     </nav>
 
-    <section class="product-details">
+
+    <!-- ===============================
+         Основная карточка товара
+         =============================== -->
+
+    <section
+      class="product-details"
+      aria-labelledby="product-title"
+    >
+
+
+      <!-- Изображение -->
+
       <div class="product-details__visual">
-        <span class="product-details__badge">Хит</span>
-        <img class="product-details__image" src="images/product-1.svg" alt="Крупное изображение товара 1">
+
+        <span class="product-details__badge">
+          Хит
+        </span>
+
+        <img
+          class="product-details__image"
+          src="images/product-1.jpg"
+          alt="Набор синих шариковых ручек Schneider Slider, 4 штуки"
+        >
+
       </div>
+
+
+      <!-- Информация -->
 
       <div class="product-details__content">
-        <p class="product-details__category">Категория: для учёбы</p>
-        <h1 class="product-details__title">Товар 1</h1>
-        <p class="product-details__lead">
-          Универсальный учебный товар, который показывает полноценную структуру карточки товара.
+
+        <p class="product-details__category">
+          Категория: Ручки
         </p>
 
+
+        <h1
+          class="product-details__title"
+          id="product-title"
+        >
+          Schneider Slider — набор ручек, 4 шт.
+        </h1>
+
+
+        <p class="product-details__lead">
+          Набор синих шариковых ручек для школы,
+          университета и повседневных записей.
+          Подходит для конспектов, домашних заданий
+          и работы с документами.
+        </p>
+
+
         <ul class="product-details__features">
-          <li class="product-details__feature">Продуманное описание товара</li>
-          <li class="product-details__feature">Отдельная таблица характеристик</li>
-          <li class="product-details__feature">Понятный переход к оформлению заявки</li>
+
+          <li class="product-details__feature">
+            Четыре ручки в комплекте
+          </li>
+
+          <li class="product-details__feature">
+            Синие чернила
+          </li>
+
+          <li class="product-details__feature">
+            Подходит для учёбы и повседневных записей
+          </li>
+
         </ul>
 
+
+        <!-- Наличие и рейтинг -->
+
         <div class="product-details__status-row">
-          <span class="status status--success">В наличии</span>
-          <span class="product-details__rating">★ 4,8 / 5</span>
+
+          <span class="status status--success">
+            В наличии
+          </span>
+
+          <span class="product-details__rating">
+            ★ 4,9 / 5
+          </span>
+
         </div>
 
-        <p class="product-details__price">1 000 руб.</p>
+
+        <!-- Цена -->
+
+        <p class="product-details__price">
+          307 ₽
+        </p>
+
+
+        <!-- Кнопки -->
 
         <div class="product-details__actions">
-          <a class="button button--primary" href="order.html">Оформить заявку</a>
-          <a class="button button--secondary" href="catalog.html">Вернуться в каталог</a>
+
+          <a
+            class="button button--primary"
+            href="order.html"
+          >
+            Оформить заявку
+          </a>
+
+          <a
+            class="button button--secondary"
+            href="catalog.html"
+          >
+            Вернуться в каталог
+          </a>
+
         </div>
+
       </div>
+
     </section>
 
+
+    <!-- ===============================
+         Характеристики
+         =============================== -->
+
     <section class="section">
+
       <div class="section__heading">
-        <p class="section__eyebrow">Технические данные</p>
-        <h2 class="section__title">Характеристики</h2>
+
+        <p class="section__eyebrow">
+          Технические данные
+        </p>
+
+        <h2 class="section__title">
+          Характеристики
+        </h2>
+
       </div>
+
 
       <div class="table-wrapper">
+
         <table class="product-table">
-          <caption class="product-table__caption">Основные характеристики товара 1</caption>
+
+          <caption class="product-table__caption">
+            Основные характеристики Schneider Slider
+          </caption>
+
+
           <thead class="product-table__head">
+
             <tr>
-              <th scope="col">Параметр</th>
-              <th scope="col">Значение</th>
-              <th scope="col">Комментарий</th>
+
+              <th scope="col">
+                Параметр
+              </th>
+
+              <th scope="col">
+                Значение
+              </th>
+
+              <th scope="col">
+                Комментарий
+              </th>
+
             </tr>
+
           </thead>
-          <tbody class="product-table__body">
-            <tr><th scope="row">Категория</th><td>Для учёбы</td><td>Базовая категория каталога</td></tr>
-            <tr><th scope="row">Цена</th><td>1 000 руб.</td><td>Без дополнительных платежей</td></tr>
-            <tr><th scope="row">Наличие</th><td>В наличии</td><td>Можно оформить заявку</td></tr>
-            <tr><th scope="row">Гарантия</th><td>12 месяцев</td><td>Учебное значение</td></tr>
-            <tr><th scope="row">Доставка</th><td>По договорённости</td><td>Уточняется после заявки</td></tr>
+
+
+          <tbody>
+
+            <tr>
+
+              <th scope="row">
+                Категория
+              </th>
+
+              <td>
+                Ручки
+              </td>
+
+              <td>
+                Письменные принадлежности
+              </td>
+
+            </tr>
+
+
+            <tr>
+
+              <th scope="row">
+                Бренд
+              </th>
+
+              <td>
+                Schneider
+              </td>
+
+              <td>
+                Канцелярские принадлежности
+              </td>
+
+            </tr>
+
+
+            <tr>
+
+              <th scope="row">
+                Тип
+              </th>
+
+              <td>
+                Шариковая ручка
+              </td>
+
+              <td>
+                Для повседневного письма
+              </td>
+
+            </tr>
+
+
+            <tr>
+
+              <th scope="row">
+                Цвет чернил
+              </th>
+
+              <td>
+                Синий
+              </td>
+
+              <td>
+                Подходит для конспектов и записей
+              </td>
+
+            </tr>
+
+
+            <tr>
+
+              <th scope="row">
+                Количество
+              </th>
+
+              <td>
+                4 шт.
+              </td>
+
+              <td>
+                Набор из четырёх ручек
+              </td>
+
+            </tr>
+
+
+            <tr>
+
+              <th scope="row">
+                Наличие
+              </th>
+
+              <td>
+                В наличии
+              </td>
+
+              <td>
+                Доступно для оформления заявки
+              </td>
+
+            </tr>
+
+
+            <tr>
+
+              <th scope="row">
+                Рейтинг
+              </th>
+
+              <td>
+                4,9 / 5
+              </td>
+
+              <td>
+                Высокая оценка товара
+              </td>
+
+            </tr>
+
+
+            <tr>
+
+              <th scope="row">
+                Цена
+              </th>
+
+              <td>
+                307 ₽
+              </td>
+
+              <td>
+                Цена указана за комплект
+              </td>
+
+            </tr>
+
           </tbody>
+
         </table>
+
       </div>
+
     </section>
+
+
+    <!-- ===============================
+         Преимущества товара
+         =============================== -->
 
     <section class="section">
+
       <div class="section__heading">
-        <p class="section__eyebrow">Почему стоит выбрать</p>
-        <h2 class="section__title">Преимущества товара</h2>
+
+        <p class="section__eyebrow">
+          Преимущества
+        </p>
+
+        <h2 class="section__title">
+          Почему этот товар удобен
+        </h2>
+
       </div>
+
 
       <div class="feature-strip">
+
         <article class="feature-strip__item">
-          <strong class="feature-strip__title">Простая заявка</strong>
-          <p class="feature-strip__text">Переход на отдельную страницу оформления.</p>
+
+          <strong class="feature-strip__title">
+            Для учёбы
+          </strong>
+
+          <p class="feature-strip__text">
+            Подходит для лекций, конспектов,
+            домашних заданий и ежедневных записей.
+          </p>
+
         </article>
+
+
         <article class="feature-strip__item">
-          <strong class="feature-strip__title">Подробные данные</strong>
-          <p class="feature-strip__text">Характеристики собраны в понятной таблице.</p>
+
+          <strong class="feature-strip__title">
+            Комплект из 4 штук
+          </strong>
+
+          <p class="feature-strip__text">
+            Несколько ручек в одном наборе удобно
+            использовать дома, в школе или университете.
+          </p>
+
         </article>
+
+
         <article class="feature-strip__item">
-          <strong class="feature-strip__title">Единый стиль</strong>
-          <p class="feature-strip__text">Компоненты оформлены в общей системе БЭМ.</p>
+
+          <strong class="feature-strip__title">
+            Высокий рейтинг
+          </strong>
+
+          <p class="feature-strip__text">
+            Товар имеет оценку 4,9 из 5
+            и относится к популярным позициям каталога.
+          </p>
+
         </article>
+
       </div>
+
     </section>
+
+
+    <!-- ===============================
+         Переход к заявке
+         =============================== -->
+
+    <section class="section">
+
+      <div class="contact-action">
+
+        <div>
+
+          <h2 class="contact-action__title">
+            Хотите оформить этот товар?
+          </h2>
+
+          <p class="contact-action__text">
+            Перейдите к форме заявки,
+            укажите контактные данные
+            и выберите Schneider Slider в списке товаров.
+          </p>
+
+        </div>
+
+
+        <a
+          class="button button--primary"
+          href="order.html"
+        >
+          Оформить заявку
+        </a>
+
+      </div>
+
+    </section>
+
   </main>
 
-  <a class="floating-action" href="order.html" aria-label="Перейти к оформлению заявки">Оставить заявку</a>
+
+  <!-- ===============================
+       Фиксированная кнопка
+       =============================== -->
+
+  <a
+    class="floating-action"
+    href="order.html"
+    aria-label="Перейти к оформлению заявки"
+  >
+    Оставить заявку
+  </a>
+
+
+  <!-- ===============================
+       Подвал сайта
+       =============================== -->
 
   <footer class="site-footer">
+
     <div class="site-footer__inner">
+
       <div>
-        <strong class="site-footer__logo">ShopProject</strong>
-        <p class="site-footer__text">Карточка товара содержит изображение, описание, цену, таблицу и кнопку заявки.</p>
+
+        <strong class="site-footer__logo">
+          ShopProject
+        </strong>
+
+        <p class="site-footer__text">
+          Учебный интернет-магазин канцтоваров
+          для школы, университета и творчества.
+        </p>
+
       </div>
-      <nav class="site-footer__nav" aria-label="Дополнительная навигация">
-        <a class="site-footer__link" href="catalog.html">Каталог</a>
-        <a class="site-footer__link" href="order.html">Заявка</a>
-        <a class="site-footer__link" href="#top">Наверх ↑</a>
+
+
+      <nav
+        class="site-footer__nav"
+        aria-label="Дополнительная навигация"
+      >
+
+        <a
+          class="site-footer__link"
+          href="index.html"
+        >
+          Главная
+        </a>
+
+        <a
+          class="site-footer__link"
+          href="catalog.html"
+        >
+          Каталог
+        </a>
+
+        <a
+          class="site-footer__link"
+          href="contacts.html"
+        >
+          Контакты
+        </a>
+
+        <a
+          class="site-footer__link"
+          href="#top"
+        >
+          Наверх ↑
+        </a>
+
       </nav>
+
     </div>
+
   </footer>
+
 </body>
+
 </html>
